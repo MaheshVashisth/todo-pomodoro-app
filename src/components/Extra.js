@@ -48,22 +48,22 @@ const Extra = () => {
  const [completedTasks, setCompletedTasks] = useState(0);
   const [pomodoroSessions, setPomodoroSessions] = useState(0);
 
-  // Function to handle task completion
+  //Function to handle task completion
  
-  // const completeTask = () => {
-  //   setCompletedTasks(completedTasks + 1);
-  //   setPomodoroSessions(pomodoroSessions + 1);
-  // };
+  const completeTask = () => {
+    setCompletedTasks(completedTasks + 1);
+    setPomodoroSessions(pomodoroSessions + 1);
+  };
 
-//  const handleClick = () => {
-//     completeTask(); // Call the completeTask function when needed
-//   };
+ const handleClick = () => {
+    completeTask(); // Call the completeTask function when needed
+  };
 
   return (
     <>
      <div className='container'>
        <header>
-        <h1>Toaday's Task to Complete</h1>
+        <h1>Toaday's Tasks to Complete</h1>
        </header>
         {
         isEditing && (
